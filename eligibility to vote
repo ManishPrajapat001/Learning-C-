@@ -1,0 +1,18 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int age;
+    string name;
+    cout<<"Enter your name :";
+    cin>>name;
+    cout<<endl<<name<<",Enter your age :";
+    cin>>age;
+    if(age<18){
+        cout<<endl<<name<<" you are not eligible";
+    }
+    else{
+        cout<<endl<<name<<" you are eligible to vote";
+    }
+    return 0;
+}
