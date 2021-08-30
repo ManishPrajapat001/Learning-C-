@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+class convertor{
+    private:
+        int h,m,s,totaltime;
+    public:
+        entertime();
+        timeconvertor(){
+            totaltime =h*3600+m*60+s;
+        }
+        displayresult(){
+            cout<<"\nThe time is = "<<h<<':'<<m<<':'<<s<< "\nTime in total seconds: "<<totaltime;
+        }
+};
+convertor :: entertime(){
+            cout<<"Enter time:";
+            cout << "Hours?";          
+            cin >>h;
+            cout << "Minutes?";          
+            cin >>m;
+            cout << "Seconds?";          
+            cin >>s;
+        }
+int main(){
+    convertor t;
+    t.entertime();
+    t.convertor();
+    t.displayresult();
+    return 0;
+    
+}
