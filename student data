@@ -11,7 +11,8 @@ using namespace std;
 int main() 
 {
   FILE *fp,*ft;
-  char another ,choice;
+  char another ;
+  int choice;
   struct student{
     char first_name[20],last_name[20],course[20],section[20];
   }
@@ -42,7 +43,7 @@ int main()
     choice = getche();
     
     switch(choice){
-      case '1':
+      case 1:
         fseek(fseek,0,SEEK_END);
         another='Y';
         while(another=='Y'||another=='y'){
@@ -62,7 +63,7 @@ int main()
             
           }
           break;
-        case '2':
+        case 2:
           system("cls");
           rewind(fp);
           cout <<"---View the Records in the Database ---";
@@ -75,7 +76,7 @@ int main()
           cout<<"\n\n";
           system("pause");
           break;
-        case '3':
+        case 3:
           system("cls");
           another='Y';
           while(another=='Y'||another=='y'){
@@ -107,7 +108,7 @@ int main()
             another = getchar();
           }
           break;
-        case '4':
+        case 4:
           system("cls");
           another='Y';
           while(another=='Y'||another=='y'){
@@ -134,7 +135,7 @@ int main()
             another=getchar();
           }
           break;
-        case '5':
+        case 5:
             fclose(fp);
             cout<<"\n\n\t\t\t\t\t\t THANK YOU FOR USING THIS PROGRAM";
             cout<<"\n\n";
